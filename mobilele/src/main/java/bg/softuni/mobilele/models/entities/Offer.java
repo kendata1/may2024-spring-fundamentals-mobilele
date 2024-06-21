@@ -10,7 +10,7 @@ import java.time.Year;
 public class Offer extends BaseEntity {
 
     private String description;
-
+    @Enumerated(value = EnumType.STRING)
     private Engine engine;
     @Column(name = "image_url")
     private String imageUrl;
@@ -18,7 +18,7 @@ public class Offer extends BaseEntity {
     private long mileage;
 
     private double price;
-
+    @Enumerated(value = EnumType.STRING)
     private Transmission transmission;
 
     private Year year;

@@ -92,4 +92,18 @@ public class User extends BaseEntity{
     public void setOffers(List<Offer> offers) {
         this.offers = offers;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", isActive=" + isActive +
+                ", userRole=" + userRole +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", offers=" + offers +
+                '}';
+    }
 }
